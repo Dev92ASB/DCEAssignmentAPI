@@ -21,6 +21,7 @@ namespace MontiHall.Controllers
         [HttpPost("GetDor")]
         public IActionResult GetDor()
         {
+            MT.ResetData();
             return Ok(MT.GetDandomSelect());
         }
 
